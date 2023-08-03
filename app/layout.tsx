@@ -2,8 +2,8 @@
 
 import './globals.css'
 import {store} from "@/redux/store";
-import { Provider } from 'react-redux'
 import React from "react";
+import Providers from './Provider';
 
 
 
@@ -14,13 +14,15 @@ export const metadata = {
 // store
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-      <Provider store={store} >
+    
     <html lang="en">
       <body>
+     <Providers>
 
       {children}
+     </Providers>
       </body>
     </html>
-      </Provider>
+    
   )
 }
