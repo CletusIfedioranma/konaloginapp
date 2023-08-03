@@ -1,4 +1,4 @@
-"use client";
+
 
 import './globals.css'
 import {store} from "@/redux/store";
@@ -18,7 +18,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="en">
       <body>
 
-      {children}</body>
+      {children}
+      </body>
     </html>
       </Provider>
   )
